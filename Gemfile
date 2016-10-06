@@ -4,6 +4,7 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 gem 'devise'
+gem 'bootstrap-sass', '~> 3.3'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 

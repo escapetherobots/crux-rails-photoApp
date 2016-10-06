@@ -1,2 +1,23 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+<section class="code-snippet">
+<h1>Rails: Adding Email Verification</h1>
+<h3> <i class="fa fa-rocket" aria-hidden="true"></i> Update config/environment.rb</h3>
+<pre><code># Load the Rails application.
+require File.expand_path('../application', __FILE__)
+
+# Initialize the Rails application.
+Rails.application.initialize!
+
+<span class="special-info">
+ActionMailer::Base.smtp_settings = {
+&nbsp;:address =&gt; 'smtp.sendgrid.net',
+&nbsp;:port =&gt; '587',
+&nbsp;:authentication =&gt; :plain,
+&nbsp;:user_name =&gt; ENV['SENDGRID_USERNAME'],
+&nbsp;:password =&gt; ENV['SENDGRID_PASSWORD'],
+&nbsp;:domain =&gt; 'heroku.com',
+&nbsp;:enable_starttls_auto =&gt; true
+}</span></code></pre>
+</section>

@@ -1,0 +1,32 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+  $grey: #666666;
+
+  .code-snippet {
+  	border: 1px solid lightgrey;
+  	padding: 20px;
+  	padding-top: 0;
+  	border-radius: 6px;
+
+  	i {
+  		border: 2px solid $grey;
+  		padding:5px;
+  		border-radius: 6px;
+  		color: $grey;
+  	}
+
+  	h3 {
+  		color: $grey;
+  	}
+
+  }
+
+  .special-info {
+  	color: red;
+  }
+
